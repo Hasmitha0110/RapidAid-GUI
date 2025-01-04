@@ -1,18 +1,21 @@
+import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Home from './pages/Home';
 import Incidents from './pages/Incidents';
 import Resources from './pages/Resources';
+import NavBar from './components/NavBar';
 
 function App() {
   return (
     <Router>
-      <nav>
+      <NavBar />
+      {/* <nav>
         <ul>
           <li><Link to="/">Home</Link></li>
           <li><Link to="/incidents">Incidents</Link></li>
           <li><Link to="/resources">Resources</Link></li>
         </ul>
-      </nav>
+      </nav> */}
 
       <Routes>
         <Route path="/" element={<Home />} />
