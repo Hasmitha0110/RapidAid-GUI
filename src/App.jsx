@@ -1,10 +1,36 @@
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import Home from "./pages/Home";
+import Incidents from "./pages/Incidents";
+import Resources from "./pages/Resources";
+
 function App() {
-  return (
-    <div style={{ textAlign: 'center', marginTop: '50px' }}>
-      <h1>Welcome to RapidAid!</h1>
-      <p>Your Disaster Management and Emergency Response System is live! 🚨</p>
-    </div>
+  return(
+    <Router>
+      <nav>
+        <ul>
+          <li><Link to="/">Home</Link></li>
+          <li><Link to="/incidents">Incidents</Link></li>
+          <li><Link to="/resources">Resources</Link></li>
+        </ul>
+      </nav>
+
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/incidents" element={<Incidents />} />
+        <Route path="/resources" element={<Resources />} />
+      </Routes>
+    </Router>
   );
 }
 
 export default App;
+
+
+
+
+
+
+
+
+
+
