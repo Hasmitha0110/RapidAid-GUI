@@ -1,0 +1,102 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #282c34;
+    padding: 1rem 2rem;
+    color: white;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 80px;
+    width: auto;
+    margin-right: 20px;
+}
+
+.logotext h1 {
+    margin: 0;
+    font-size: 30px;
+    font-family: 'Arial', Helvetica, sans-serif;
+    padding: 0;
+    line-height: 1.3;
+}
+
+.logotext h6 {
+    margin: 0;
+    font-size: 11px;
+    font-family: 'Arial', Helvetica, sans-serif;
+    padding: 0;
+    line-height: 1; 
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+    margin: 0;
+    margin-left: 80px;
+    flex: 1;
+    justify-content: flex-start;
+    padding: 0;
+}
+
+.nav-link {
+    padding: 0;
+    display: inline;
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    margin: 0;
+    position: relative;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    display: block;
+    margin-top: 5px;
+    left: 50%;
+    background: #61dafb;
+    transition: width 0.3s ease,left 0.3s ease;
+    -webkit-transition: width 0.3s ease,left 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+    left: 0;
+    background: #61dafb;
+}
+
+.prof button {
+    border-radius: 8px;
+    font-family: poppins;
+    background-color: #555;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.prof button:hover {
+    background-color: #777;
+    transition: background-color 0.3s;
+}
+
+
+
+
+
+
+
+
+
+
+

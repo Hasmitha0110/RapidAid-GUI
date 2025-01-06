@@ -1,9 +1,14 @@
+import React from 'react';
+import './Resources.css';
+
 function Resources() {
     return (
-      <div>
+      <div className='wrapper'>
+            <div className='content'>
         <h1>Resources</h1>
         <p>Manage emergency resources here.</p>
       </div>
+      </div>  
     );
   }
   

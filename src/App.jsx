@@ -1,9 +1,12 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-import Home from './pages/Home';
-import Incidents from './pages/Incidents';
-import Resources from './pages/Resources';
-import NavBar from './components/NavBar';
+import Home from './components/bodycontent/pages/Home/Home';
+import Incidents from './components/bodycontent/pages/Incidents/Incidents';
+import Resources from './components/bodycontent/pages/Resources/Resources';
+import About from './components/bodycontent/pages/About/About';
+import NavBar from './components/headercontent/NavBar';
+import Footer from './components/footercontent/Footer';
+import Contact from './components/bodycontent/pages/Contact/Contact';
 
 function App() {
   return (
@@ -21,7 +24,10 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/incidents" element={<Incidents />} />
         <Route path="/resources" element={<Resources />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
+      <Footer />
     </Router>
   );
 }
