@@ -1,0 +1,49 @@
+/* Common button styles */
+.button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  
+  .login {
+    border-radius: 8px;
+    font-family: poppins;
+    font-weight: bold;;
+    background-color: #282c34;
+    color: white;
+    border: 3px solid #A61B1B;
+    padding: 5px 10px;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+
+  .login:hover {
+    background-color: #A61B1B;
+    color: #282c34;
+  
+    transition: background-color 0.3s;
+  } 
+  
+
+  .signup {
+    border-radius: 8px;
+    font-family: poppins;
+    font-weight: bold;;
+    background-color: #A61B1B;
+    color: #282c34;
+    border: 3px solid #A61B1B;
+    padding: 5px 10px;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  
+  .signup:hover {
+    background-color: #282c34;
+    color: white;
+  
+    transition: background-color 0.3s;
+  }

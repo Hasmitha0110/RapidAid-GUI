@@ -50,7 +50,7 @@
     display: inline;
     text-decoration: none;
     color: white;
-    font-size: 1.2rem;
+    font-size: 20px;
     margin: 0;
     position: relative;
 }
@@ -63,31 +63,16 @@
     display: block;
     margin-top: 5px;
     left: 50%;
-    background: #61dafb;
+    background: #A61B1B;
     transition: width 0.3s ease,left 0.3s ease;
     -webkit-transition: width 0.3s ease,left 0.3s ease;
 }
 
+.nav-link:hover::after,
 .nav-link:hover::after {
     width: 100%;
     left: 0;
-    background: #61dafb;
-}
-
-.prof button {
-    border-radius: 8px;
-    font-family: poppins;
-    background-color: #555;
-    color: #fff;
-    border: none;
-    padding: 5px 10px;
-    margin-left: 10px;
-    cursor: pointer;
-}
-
-.prof button:hover {
-    background-color: #777;
-    transition: background-color 0.3s;
+    background: #A61B1B;
 }
 
 

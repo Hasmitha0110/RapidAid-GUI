@@ -1,14 +1,89 @@
+/* Main Wrapper Styling */
 body, html {
     height: 100%;
     margin: 0;
+    background-color: orange;
 }
 
-.wrapper {
+.home-wrapper {
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 0px; /* Pushes content below the NavBar */
+    margin-left: 30px;
+    margin-right: 30px;
+    padding: 0px;
+    height: 100vh;
+    background-color: #f4f4f4;
 }
 
-.content {
-    flex: 1;
+.content-sections {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 1200px;
+    background-color: #b8b080;
+    padding: 0;
+    margin: 0;
+    height: 230px;
+}
+
+.left-section, .right-section {
+    border-radius: 50px;
+    width:40%;
+    margin: 0px 20px;
+    padding: 20px;
+    
+    text-align: center;
+}
+
+.left-section h3, .right-section h3 {
+    margin: 0px;
+    text-decoration: underline;
+    padding: 0px;
+    font-size: 30px;
+    color: #22273c;
+} 
+
+.left-section p, .right-section p {
+    font-size: 20px;
+    color: #333539;
+}
+
+
+/* Button Container Styling */
+.report-button-container {
+    margin-top: 0px;
+    width: 20%;
+    text-align: center;
+}
+
+/* 3D Animated Button Styling */
+.report-button {
+    background: linear-gradient(145deg, #ff1e1e, #d60000);
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 25px;
+    border: 5px solid #282c34;
+    border-radius: 50%;
+    cursor: pointer;
+    width: 180px;
+    height: 180px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25), inset 0 4px 6px rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+/* Hover Effect for the Button */
+.report-button:hover {
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.35), inset 0 4px 8px rgba(255, 255, 255, 0.15);
+    transform: translateY(-8px);
+}
+
+/* Click (Active) Effect */
+.report-button:active {
+    transform: translateY(2px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2), inset 0 4px 6px rgba(0, 0, 0, 0.1);
 }
