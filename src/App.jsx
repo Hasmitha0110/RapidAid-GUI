@@ -7,6 +7,8 @@ import About from './components/bodycontent/pages/About/About';
 import NavBar from './components/headercontent/NavBar';
 import Footer from './components/footercontent/Footer';
 import Contact from './components/bodycontent/pages/Contact/Contact';
+import ReportDisaster from './components/bodycontent/pages/ReportSubmit/ReportDisaster';
+
 
 function App() {
   return (
@@ -26,6 +28,7 @@ function App() {
         <Route path="/resources" element={<Resources />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/report-disaster" element={<ReportDisaster />} />
       </Routes>
       <Footer />
     </Router>
