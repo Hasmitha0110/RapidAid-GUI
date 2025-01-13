@@ -7,11 +7,13 @@ import About from './components/bodycontent/pages/About/About';
 import NavBar from './components/headercontent/NavBar';
 import Footer from './components/footercontent/Footer';
 import Contact from './components/bodycontent/pages/Contact/Contact';
-import ReportDisaster from './components/bodycontent/pages/ReportSubmit/ReportDisaster';
+import ReportDisaster from './components/bodycontent/pages/ReportDisaster/ReportDisaster';
+
 
 
 function App() {
   return (
+    <div>
     <Router>
       <NavBar />
       {/* <nav>
@@ -32,6 +34,7 @@ function App() {
       </Routes>
       <Footer />
     </Router>
+    </div>
   );
 }
 
