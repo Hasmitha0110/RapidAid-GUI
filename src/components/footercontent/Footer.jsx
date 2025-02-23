@@ -5,7 +5,7 @@ function Footer() {
   return (
     <foot>
         <div className="footer">  
-        <p>&copy; 2023 RapidAid - Disaster Management and Emergency Response System. All rights reserved.</p>
+        <p>&copy; 2025 RapidAid - Disaster Management and Emergency Response System. All rights reserved.</p>
         <p>Contact us: support@rapidaid.com</p>
         </div>
     </foot>

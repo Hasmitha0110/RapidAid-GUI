@@ -16,7 +16,7 @@ const Incidents = () => {
   const activeDistricts = Array.from(
     new Set(
       incidents
-        .filter((incident) => incident.status === 'active')
+        .filter((incident) => incident.status === 'Active')
         .map((incident) => incident.district)
     )
   );
@@ -28,7 +28,7 @@ const Incidents = () => {
   // Filter active incidents by selected district
   const filteredIncidents = incidents.filter(
     (incident) =>
-      incident.status === 'active' &&
+      incident.status === 'Active' &&
       (selectedDistrict === '' || incident.district === selectedDistrict)
   );
 
@@ -57,6 +57,8 @@ const Incidents = () => {
               key={incident.id}
               incident={incident}
               onDelete={handleDeleteIncident}
+              showStatus={false}
+              showActions={true}
             />
           ))
         ) : (

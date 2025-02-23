@@ -14,7 +14,7 @@
   }
   
   .incident-photo {
-    height: 220px;
+    height: 250px;
     background-size: cover;
     background-position: center;
     position: relative;
@@ -39,8 +39,8 @@
     left: 0;
     right: 0;
     padding: 15px;
-    backdrop-filter: blur(3px);
-    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(0px);
+    background: rgba(0, 0, 0, 0.4);
     color: #000;
     z-index: 2;
   }
@@ -55,8 +55,9 @@
   }
 
   .clickable-title:hover {
-    text-decoration: underline;
-    transition: text-decoration 1s ease;
+    text-decoration-line: underline;
+    text-underline-offset:5px;
+    color:orange;
   }
 
   .incident-info p {
@@ -74,7 +75,10 @@
     font-size: 18px;
     font-weight: bold;
     color: darkred;
-    text-shadow: 0px 0px +10px rgb(240, 239, 239);
+    background: rgba(255, 255, 255, 0.842);
+    padding: 3px;
+    border-radius: 8px;
+    text-shadow: 0px 0px 0px rgb(240, 239, 239);
   }
   
   .incident-actions {
@@ -101,12 +105,12 @@
     background-color: #d63030;
   }
   
-  .delete-btn {
-    background-color: #d9534f;
+  .incident-actions button.delete-btn {
+    background-color: #282c34;
   }
   
-  .delete-btn:hover {
-    background-color: #c9302c;
+  .incident-actions button.delete-btn:hover {
+    background-color: #4c525f;
   }
   
   /* Emergency Responses Section */

@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import './IncidentCard.css';
+import IncidentImages from './IncidentImages';
 
-const IncidentCard = ({ incident, onDelete }) => {
+const IncidentCard = ({ incident, onDelete,showStatus = true, showActions = true }) => {
   const [affectedCount, setAffectedCount] = useState(incident.affectedCount);
   const [isExpanded, setIsExpanded] = useState(false);
 
@@ -17,6 +18,7 @@ const IncidentCard = ({ incident, onDelete }) => {
     }
   };
 
+
   // Toggle expanded section
   const toggleExpanded = () => {
     setIsExpanded(!isExpanded);
@@ -26,24 +28,25 @@ const IncidentCard = ({ incident, onDelete }) => {
     <div className="incident-card">
       <div
         className="incident-photo"
-        style={{ backgroundImage: `url(src/assets/${incident.type}.png)` }}
+        style={{backgroundImage: `url(${IncidentImages[incident.type] || IncidentImages.Other})`,}}
       >
         <div className="incident-info">
           <h3 onClick={toggleExpanded} className="clickable-title">
-            {incident.type} {isExpanded ? '⊼' : '⊻'}
+            {incident.type} {isExpanded ? '⮝' : '⮟'}
           </h3>
           <p><strong>Location:</strong> {incident.location}, {incident.district}</p>
           <p><strong>Date:</strong> {incident.date}</p>
           <p><strong>Description:</strong> {incident.description}</p>
           <p className="af-count"><strong>Affected People:</strong> {affectedCount}</p>
+          {showStatus && (<p><strong>Status:</strong><span style={{color:"aqua"}}> {incident.status}</span></p>)}
         </div>
       </div>
-
+      {showActions && (
       <div className="incident-actions">
         <button onClick={handleAffectClick}>I'm suffering from the same</button>
         <button onClick={handleDelete} className="delete-btn">Delete Report</button>
       </div>
-
+      )}
       {isExpanded && (
         <div className="emergency-responses">
           <h4>Emergency Team Responses:</h4>
