@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import './Home.css';
 import Button from '../../../re_comps/Button';
 
-const Home = () => {
     return (
         <div className="home-wrapper">
             <div className="content-sections">
