@@ -1,31 +1,36 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
 import './Incidents.css';
 import IncidentCard from '../../../re_comps/IncidentCard';
-import DummyData from '../../../re_comps/DummyData';
 
 const Incidents = () => {
   const [selectedDistrict, setSelectedDistrict] = useState('');
-  const [incidents, setIncidents] = useState(DummyData);
+  const [incidents, setIncidents] = useState([]);
+
+  // Fetch incidents from backend
+  useEffect(() => {
+    axios.get('http://localhost:4000/incidents')
+      .then(response => setIncidents(response.data))
+      .catch(error => console.error('Error fetching incidents:', error));
+  }, []);
 
   // Handle delete report
   const handleDeleteIncident = (id) => {
-    setIncidents(incidents.filter((incident) => incident.id !== id));
+    axios.delete(`http://localhost:4000/incidents/${id}`)
+      .then(() => setIncidents(incidents.filter((incident) => incident.id !== id)))
+      .catch(error => console.error('Error deleting incident:', error));
   };
 
   // Get unique active districts
   const activeDistricts = Array.from(
-    new Set(
-      incidents
-        .filter((incident) => incident.status === 'Active')
-        .map((incident) => incident.district)
-    )
+    new Set(incidents.filter(incident => incident.status === 'Active').map(incident => incident.district))
   );
 
   const handleFilterChange = (e) => {
     setSelectedDistrict(e.target.value);
   };
 
-  // Filter active incidents by selected district
+  // Filter active incidents by district
   const filteredIncidents = incidents.filter(
     (incident) =>
       incident.status === 'Active' &&
@@ -42,9 +47,7 @@ const Incidents = () => {
         <select value={selectedDistrict} onChange={handleFilterChange}>
           <option value="">All Districts</option>
           {activeDistricts.map((district) => (
-            <option key={district} value={district}>
-              {district}
-            </option>
+            <option key={district} value={district}>{district}</option>
           ))}
         </select>
       </div>

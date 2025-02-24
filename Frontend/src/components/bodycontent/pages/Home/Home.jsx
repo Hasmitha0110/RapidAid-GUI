@@ -1,13 +1,22 @@
-import React from 'react';
+import React,{useEffect, useState} from 'react';
+import axios from 'axios';
 import { Link } from 'react-router-dom';
 import './Home.css';
 import Button from '../../../re_comps/Button';
 import Slider from '../../../re_comps/Slider';
-import DummyData from '../../../re_comps/DummyData';
+
 
 const Home = () => {
+  const [incidents, setIncidents] = useState([]);
 
-  const incidents = DummyData
+  // Fetch incidents from backend
+  useEffect(() => {
+    axios.get('http://localhost:4000/incidents')
+      .then(response => setIncidents(response.data))
+      .catch(error => console.error('Error fetching incidents:', error));
+  }, []);
+
+  // Get 10 most affected incidents
   const mostAffectedIncidents = incidents
     .filter(incident => incident.status === 'Active')
     .sort((a, b) => b.affectedCount - a.affectedCount)

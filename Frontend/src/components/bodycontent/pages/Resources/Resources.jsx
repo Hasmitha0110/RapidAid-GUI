@@ -1,15 +1,26 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
 import './Resources.css';
 import IncidentCard from '../../../re_comps/IncidentCard';
-import DummyData from '../../../re_comps/DummyData';
 
 const Resources = () => {
-  const [filteredIncidents, setFilteredIncidents] = useState(DummyData);
+  const [incidents, setIncidents] = useState([]);
+  const [filteredIncidents, setFilteredIncidents] = useState([]);
   const [filters, setFilters] = useState({
     status: '',
     district: '',
     date: ''
   });
+
+  // Fetch all incidents on mount
+  useEffect(() => {
+    axios.get('http://localhost:4000/incidents')
+      .then(response => {
+        setIncidents(response.data);
+        setFilteredIncidents(response.data);
+      })
+      .catch(error => console.error('Error fetching incidents:', error));
+  }, []);
 
   // Handle filter changes
   const handleFilterChange = (e) => {
@@ -17,26 +28,15 @@ const Resources = () => {
     setFilters((prevFilters) => ({ ...prevFilters, [name]: value }));
   };
 
-
-
-  // Apply filters
+  // Apply filters to incidents
   const applyFilters = () => {
-    let result = DummyData;
-
-    if (filters.status) {
-      result = result.filter((incident) => incident.status === filters.status);
-    }
-
-    if (filters.district) {
-      result = result.filter((incident) => incident.district === filters.district);
-    }
-
-    if (filters.date) {
-      result = result.filter((incident) => incident.date === filters.date);
-    }
-
-    setFilteredIncidents(result);
+    axios.get('http://localhost:4000/incidents', { params: filters })
+      .then(response => setFilteredIncidents(response.data))
+      .catch(error => console.error('Error applying filters:', error));
   };
+
+  // Get unique districts for the dropdown
+  const uniqueDistricts = [...new Set(incidents.map((incident) => incident.district))];
 
   return (
     <div className="resources-wrapper">
@@ -54,10 +54,8 @@ const Resources = () => {
         <label>District:</label>
         <select name="district" onChange={handleFilterChange}>
           <option value="">All</option>
-          {Array.from(new Set(DummyData.map((incident) => incident.district))).map((district) => (
-            <option key={district} value={district}>
-              {district}
-            </option>
+          {uniqueDistricts.map((district) => (
+            <option key={district} value={district}>{district}</option>
           ))}
         </select>
 
@@ -75,7 +73,9 @@ const Resources = () => {
               key={incident.id}
               incident={incident}
               showStatus={true}
-              showActions={false} />
+              showActions={false} // Disable delete/report actions
+              readOnlyComments={true} // Disable adding/deleting comments
+            />
           ))
         ) : (
           <p>No incidents found.</p>
