@@ -58,20 +58,52 @@ const Home = () => {
       <h2 className="most-affect">Most Affected Incidents</h2>
       <Slider incidents={mostAffectedIncidents} />
 
-      <div class="feature-cards">
-        <div class="card">
-          <h3>Report Incidents</h3>
-          <p>Quickly report disasters and emergencies with detailed information.</p>
-        </div>
-        <div class="card">
-          <h3>Track Resources</h3>
-          <p>Monitor available resources and allocate them effectively.</p>
-        </div>
-        <div class="card">
-          <h3>Emergency Alerts</h3>
-          <p>Receive real-time alerts and notifications about ongoing emergencies.</p>
-        </div>
-      </div>
+  
+<div className="feature-cards">
+  <div className="feature-card">
+    <div className="card-icon">
+      <svg viewBox="0 0 24 24">
+        <path d="M13 14h-2v-4h2m0 8h-2v-2h2M12 2a10 10 0 0 0-10 10 10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2z"/>
+      </svg>
+    </div>
+    <h3>Rapid Reporting System</h3>
+    <p>Submit disaster reports in 3 simple steps with GPS location tagging and photo evidence uploads</p>
+    <div className="steps">
+      <span className="step">1. Describe Incident</span>
+      <span className="step">2. Add Location</span>
+      <span className="step">3. Submit Alert</span>
+    </div>
+  </div>
+
+  <div className="feature-card">
+    <div className="card-icon">
+      <svg viewBox="0 0 24 24">
+        <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+      </svg>
+    </div>
+    <h3>Live Crisis Mapping</h3>
+    <p>Real-time visualization of active incidents with color-coded severity levels and resource allocation status</p>
+    <div className="key-points">
+      <span>• Heatmap Analysis</span>
+      <span>• Response Tracking</span>
+    </div>
+  </div>
+
+  <div className="feature-card">
+    <div className="card-icon">
+      <svg viewBox="0 0 24 24">
+        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+      </svg>
+    </div>
+    <h3>Unified Response Platform</h3>
+    <p>Integrated communication channel connecting citizens, first responders, and government agencies</p>
+    <div className="key-benefits">
+      <span>✓ Emergency Broadcasts</span>
+      <span>✓ Crowdsourced Updates</span>
+      <span>✓ Official Alerts</span>
+    </div>
+  </div>
+</div>
 
     </div>
   );

@@ -10,15 +10,66 @@ const PORT = 4000;
 app.use(cors());
 app.use(bodyParser.json());
 
+
+
+app.get('/districts', async (req, res) => {
+  try {
+    const districts = await prisma.incident.findMany({
+      distinct: ['district'],
+      select: { district: true }
+    });
+    res.json(districts.map(d => d.district));
+  } catch (error) {
+    res.status(500).json({ error: 'Failed to fetch districts' });
+  }
+});
+
 // ======== INCIDENT ROUTES ======== //
 
-// Get all incidents
+
 app.get('/incidents', async (req, res) => {
-  const incidents = await prisma.incident.findMany({
-    include: { comments: true },
-  });
-  res.json(incidents);
+  const { status, district, date, sort } = req.query;
+
+  try {
+    const orderBy = {};
+    if (sort === 'asc' || sort === 'desc') {
+      orderBy.affectedCount = sort;
+    } else {
+      orderBy.date = 'desc';
+    }
+
+    const where = {
+      status: status || undefined,
+      district: district || undefined,
+    };
+
+    // Date filtering with range
+    if (date) {
+      const startDate = new Date(date);
+      const endDate = new Date(startDate);
+      endDate.setUTCDate(startDate.getUTCDate() + 1);
+
+      where.date = {
+        gte: startDate,
+        lt: endDate
+      };
+    }
+
+    const incidents = await prisma.incident.findMany({
+      where,
+      include: {
+        comments: true,
+        emergencyResponses: true
+      },
+      orderBy
+    });
+
+    res.json(incidents);
+  } catch (error) {
+    res.status(500).json({ error: 'Error fetching incidents' });
+  }
 });
+
 
 // Create new incident
 app.post('/incidents', async (req, res) => {
@@ -192,6 +243,40 @@ app.patch('/incidents/:id/status', async (req, res) => {
       res.status(500).json({ error: 'Error updating incident status' });
     }
   });
+
+  // ======== USER ROUTES ======== //
+app.post('/signup', async (req, res) => {
+  const { name, username, password, role } = req.body;
+  
+  try {
+    const user = await prisma.user.create({
+      data: { name, username, password, role }
+    });
+    res.json(user);
+  } catch (error) {
+    res.status(400).json({ error: 'Username exists' });
+  }
+});
+
+// Login user
+app.post('/login', async (req, res) => {
+  const { username, password } = req.body;
+
+  try {
+    const user = await prisma.user.findUnique({
+      where: { username }
+    });
+    
+    if (!user || user.password !== password) {
+      return res.status(401).json({ error: 'Invalid credentials' });
+    }
+    
+    res.json(user);
+  } catch (error) {
+    res.status(500).json({ error: 'Login failed' });
+  }
+});
+  
   
   
 

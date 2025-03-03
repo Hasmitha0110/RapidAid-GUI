@@ -1,0 +1,68 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Hasmitha\\lecture notes\\programing\\Chatgpt\\Gui project\\RapidAid-App\\DesktopApp\\RapidAid\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DBB19B85-7A48-49AE-B9E7-F60912C4780F}|RapidAid Desktop App\\RapidAid Desktop App.csproj|d:\\hasmitha\\lecture notes\\programing\\chatgpt\\gui project\\rapidaid-app\\desktopapp\\rapidaid\\rapidaid desktop app\\maindashboard.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{DBB19B85-7A48-49AE-B9E7-F60912C4780F}|RapidAid Desktop App\\RapidAid Desktop App.csproj|solutionrelative:rapidaid desktop app\\maindashboard.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DBB19B85-7A48-49AE-B9E7-F60912C4780F}|RapidAid Desktop App\\RapidAid Desktop App.csproj|d:\\hasmitha\\lecture notes\\programing\\chatgpt\\gui project\\rapidaid-app\\desktopapp\\rapidaid\\rapidaid desktop app\\loginwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{DBB19B85-7A48-49AE-B9E7-F60912C4780F}|RapidAid Desktop App\\RapidAid Desktop App.csproj|solutionrelative:rapidaid desktop app\\loginwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DBB19B85-7A48-49AE-B9E7-F60912C4780F}|RapidAid Desktop App\\RapidAid Desktop App.csproj|d:\\hasmitha\\lecture notes\\programing\\chatgpt\\gui project\\rapidaid-app\\desktopapp\\rapidaid\\rapidaid desktop app\\signupwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{DBB19B85-7A48-49AE-B9E7-F60912C4780F}|RapidAid Desktop App\\RapidAid Desktop App.csproj|solutionrelative:rapidaid desktop app\\signupwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LoginWindow.xaml",
+              "DocumentMoniker": "D:\\Hasmitha\\lecture notes\\programing\\Chatgpt\\Gui project\\RapidAid-App\\DesktopApp\\RapidAid\\RapidAid Desktop App\\LoginWindow.xaml",
+              "RelativeDocumentMoniker": "RapidAid Desktop App\\LoginWindow.xaml",
+              "ToolTip": "D:\\Hasmitha\\lecture notes\\programing\\Chatgpt\\Gui project\\RapidAid-App\\DesktopApp\\RapidAid\\RapidAid Desktop App\\LoginWindow.xaml",
+              "RelativeToolTip": "RapidAid Desktop App\\LoginWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-03-03T22:31:44.034Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SignUpWindow.xaml",
+              "DocumentMoniker": "D:\\Hasmitha\\lecture notes\\programing\\Chatgpt\\Gui project\\RapidAid-App\\DesktopApp\\RapidAid\\RapidAid Desktop App\\SignUpWindow.xaml",
+              "RelativeDocumentMoniker": "RapidAid Desktop App\\SignUpWindow.xaml",
+              "ToolTip": "D:\\Hasmitha\\lecture notes\\programing\\Chatgpt\\Gui project\\RapidAid-App\\DesktopApp\\RapidAid\\RapidAid Desktop App\\SignUpWindow.xaml",
+              "RelativeToolTip": "RapidAid Desktop App\\SignUpWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-03-03T22:31:36.356Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainDashboard.xaml",
+              "DocumentMoniker": "D:\\Hasmitha\\lecture notes\\programing\\Chatgpt\\Gui project\\RapidAid-App\\DesktopApp\\RapidAid\\RapidAid Desktop App\\MainDashboard.xaml",
+              "RelativeDocumentMoniker": "RapidAid Desktop App\\MainDashboard.xaml",
+              "ToolTip": "D:\\Hasmitha\\lecture notes\\programing\\Chatgpt\\Gui project\\RapidAid-App\\DesktopApp\\RapidAid\\RapidAid Desktop App\\MainDashboard.xaml",
+              "RelativeToolTip": "RapidAid Desktop App\\MainDashboard.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-03-03T20:40:40.423Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

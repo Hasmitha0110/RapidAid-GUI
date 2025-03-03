@@ -69,7 +69,11 @@ const IncidentCard = ({ incident, onDelete, showStatus = true, showActions = tru
             {incident.type} {isExpanded ? '⮝' : '⮟'}
           </h3>
           <p><strong>Location:</strong> {incident.location}, {incident.district}</p>
-          <p><strong>Date:</strong> {new Date(incident.date).toLocaleDateString()}</p>
+          <p><strong>Date:</strong> {new Date(incident.date).toLocaleDateString('en-GB',{
+            day: '2-digit',
+            month: '2-digit',
+            year: 'numeric'
+          })}</p>
           <p><strong>Description:</strong> {incident.description}</p>
           <p className="af-count"><strong>Affected People:</strong> {affectedCount}</p>
           {showStatus && (<p><strong>Status:</strong><span style={{ color: "aqua" }}> {incident.status}</span></p>)}

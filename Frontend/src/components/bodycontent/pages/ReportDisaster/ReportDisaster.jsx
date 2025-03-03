@@ -26,10 +26,13 @@ const ReportDisaster = () => {
     description: '',
     injuredOrDead: '',
     numInjuredOrDead: '',
+    photos: [],
     otherDisaster: ''
   });
 
   const [errors, setErrors] = useState({});
+  const [photoPreviews, setPhotoPreviews] = useState([]);
+
   const navigate = useNavigate();
 
   // Handle form input changes
@@ -37,6 +40,16 @@ const ReportDisaster = () => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
   };
+
+    // Handle photo uploads
+    const handleFileChange = (e) => {
+      const files = Array.from(e.target.files);
+      setFormData({ ...formData, photos: files });
+  
+      // Generate image previews
+      const filePreviews = files.map(file => URL.createObjectURL(file));
+      setPhotoPreviews(filePreviews);
+    };  
 
   // Form validation
   const validateForm = () => {
@@ -127,6 +140,17 @@ const ReportDisaster = () => {
         <label>Briefly Describe the Situation:</label>
         <textarea name="description" value={formData.description} onChange={handleChange}></textarea>
         {errors.description && <span className="error-text">{errors.description}</span>}
+
+        <label>Add Photos (optional)</label>
+        <input type="file" name="photos" multiple onChange={handleFileChange} />
+
+        {/* Photo previews */}
+        <div className="photo-preview-container">
+          {photoPreviews.map((preview, index) => (
+            <img key={index} src={preview} alt={`Preview ${index + 1}`} className="photo-preview" />
+          ))}
+        </div>
+
 
         <label>Anyone Injured or Dead?</label>
         <div>
