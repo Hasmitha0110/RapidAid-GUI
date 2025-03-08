@@ -9,7 +9,50 @@
       Title="ActiveIncidentsPage">
 
     <Grid>
-        <TextBlock Text="Active Incidents Page (To Be Implemented)" 
-                 HorizontalAlignment="Center" VerticalAlignment="Center" Background="White"/>
+        <ListView ItemsSource="{Binding Incidents}" Background="Transparent" BorderThickness="0">
+            <ListView.ItemTemplate >
+                <DataTemplate >
+                    <Border CornerRadius="10" Background="#f0f0f0" Margin="0,5" Padding="10" Width="600" Height="auto" BorderThickness="1" BorderBrush="Black" MouseDown="IncidentCard_Click">
+                        <StackPanel>
+                            <TextBlock Text="{Binding Type}" FontSize="18" FontWeight="Bold" Margin="0,0,0,5" TextDecorations="Underline"/>
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="Location:" FontWeight="Bold"/>
+                                <TextBlock Text="{Binding Location}" Margin="5,0"/>
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="District:" FontWeight="Bold"/>
+                                <TextBlock Text="{Binding District}" Margin="5,0"/>
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="Date:" FontWeight="Bold"/>
+                                <TextBlock Text="{Binding Date}" Margin="5,0"/>
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="Discription:" FontWeight="Bold"/>
+                                <TextBlock Text="{Binding Description}" Margin="5,0" TextWrapping="Wrap" Width="500"/>
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal">
+                                        <TextBlock Text="Affected:" FontWeight="Bold"/>
+                                        <TextBlock Text="{Binding AffectedCount}" Margin="5,0"/>
+                                    </StackPanel>
+                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                                    <Button Content="Delete" Click="DeleteIncident_Click" Background="#ff4444" Margin="0,25,490,0" Padding="1"/>
+                                <Button Content="{Binding Status}" Click="ToggleStatus_Click" Background="{Binding Status, Converter={StaticResource StatusColorConverter}}" Margin="0,25,0,0" Padding="1"/>
+                                    
+                                </StackPanel>
+                                
+                                
+                                
+                                
+                                
+                            
+                        </StackPanel>
+                    </Border>
+                </DataTemplate>
+                
+            
+            </ListView.ItemTemplate>
+        </ListView>
+
     </Grid>
 </Page>

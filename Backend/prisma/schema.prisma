@@ -19,10 +19,14 @@ model Incident {
   type              String
   district          String
   location          String
-  date              DateTime           @default(now())
+  date              DateTime            @default(now())
   description       String
-  affectedCount     Int                @default(0)
-  status            String             // "Active" or "Inactive"
+  affectedCount     Int                 @default(0)
+  status            String              // "Active" or "Inactive"
+  name              String              // Name of reporter (required)
+  contact           String              // Contact info (required)
+  injuredOrDead     Boolean             // Whether injury/death occurred (required)
+  numInjuredOrDead  Int?                // Optional count
   comments          Comment[]
   emergencyResponses EmergencyResponse[]
 }
@@ -31,6 +35,7 @@ model Comment {
   id          Int      @id @default(autoincrement())
   content     String
   createdAt   DateTime @default(now())
+  isAdmin     Boolean  @default(false)  // Flag for admin comments
   incidentId  Int
   incident    Incident @relation(fields: [incidentId], references: [id])
 }
@@ -48,5 +53,5 @@ model User {
   name     String
   username String @unique
   password String
-  role     String // "user" or "admin"
+  role     String 
 }

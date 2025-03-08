@@ -10,13 +10,13 @@
     <Compile Update="ActiveIncidentsPage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="IncidentDetailsPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="LoginWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="MainDashboard.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Update="MessagesPage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="PastIncidentsPage.xaml.cs">
@@ -30,13 +30,13 @@
     <Page Update="ActiveIncidentsPage.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="IncidentDetailsPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="LoginWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="MainDashboard.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Update="MessagesPage.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="PastIncidentsPage.xaml">

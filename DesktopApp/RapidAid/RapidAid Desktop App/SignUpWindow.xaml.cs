@@ -31,7 +31,7 @@ namespace RapidAid_Desktop_App
             loginWindow.Show();
             this.Close();
         }
-        private void SignUp_Click(object sender, RoutedEventArgs e)
+        private async void SignUp_Click(object sender, RoutedEventArgs e)
         {
             string fullName = txtFullName.Text;
             string username = txtNewUsername.Text;
@@ -40,19 +40,39 @@ namespace RapidAid_Desktop_App
             if (string.IsNullOrEmpty(fullName) || string.IsNullOrEmpty(username) || string.IsNullOrEmpty(password))
             {
                 MessageBox.Show("Please fill in all fields!", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                return;
             }
-            else
+
+            try
             {
-                MessageBox.Show("Sign up successful!", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
-                // Go back to the login window
-                LoginWindow loginWindow = new LoginWindow();
-                loginWindow.Show();
-                this.Close();
+                var user = await ApiHelper.PostAsync<User>("/signup", new
+                {
+                    name = fullName,
+                    username,
+                    password,
+                    role = "admin" // Default role
+                });
+
+                if (user != null)
+                {
+                    MessageBox.Show("Sign up successful!", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
+
+                    // Navigate back to login
+                    LoginWindow loginWindow = new LoginWindow();
+                    loginWindow.Show();
+                    this.Close();
+                }
             }
-
-
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Sign up failed: {ex.Message}", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
         }
 
-        
+
     }
+
+        
+    
 }
+

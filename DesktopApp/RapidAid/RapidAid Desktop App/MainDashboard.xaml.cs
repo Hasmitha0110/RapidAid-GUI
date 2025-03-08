@@ -23,7 +23,7 @@ namespace RapidAid_Desktop_App
         {
             InitializeComponent();
 
-            txtWelcome.Text = $"Welcome, {username} (Admin)!";
+            txtWelcome.Text = $"Welcome, {username} (admin)!";
 
             MainContentFrame.Navigate(new ActiveIncidentsPage());
         }
@@ -42,11 +42,6 @@ namespace RapidAid_Desktop_App
         private void PastIncidents_Click(object sender, RoutedEventArgs e)
         {
             MainContentFrame.Navigate(new PastIncidentsPage());
-        }
-
-        private void Messages_Click(object sender, RoutedEventArgs e)
-        {
-            MainContentFrame.Navigate(new MessagesPage());
         }
 
         private void Logout_Click(object sender, RoutedEventArgs e)

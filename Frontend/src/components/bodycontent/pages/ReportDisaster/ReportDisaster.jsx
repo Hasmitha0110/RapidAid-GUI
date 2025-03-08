@@ -71,24 +71,29 @@ const ReportDisaster = () => {
   // Handle form submission
   const handleSubmit = async (e) => {
     e.preventDefault();
-
+  
     if (!validateForm()) {
       alert("Please fill out all required fields.");
       return;
     }
-
+  
     try {
-      // Send data to backend
       await axios.post('http://localhost:4000/incidents', {
         type: formData.disasterType === 'Other' ? formData.otherDisaster : formData.disasterType,
         district: formData.district,
         location: formData.exactLocation,
         description: formData.description,
-        status: 'Active' // New reports default to active
+        name: formData.name,
+        contact: formData.contactNumber,
+        injuredOrDead: formData.injuredOrDead === 'Yes',
+        numInjuredOrDead: formData.injuredOrDead === 'Yes' 
+          ? parseInt(formData.numInjuredOrDead) 
+          : null,
+        status: 'Active'
       });
-
+  
       alert('Disaster report submitted successfully!');
-      navigate('/'); // Redirect to Home page
+      navigate('/');
     } catch (error) {
       console.error('Error submitting disaster report:', error);
       alert('Failed to submit the report.');

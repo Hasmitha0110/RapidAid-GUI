@@ -15,8 +15,8 @@ app.use(bodyParser.json());
 app.get('/districts', async (req, res) => {
   try {
     const districts = await prisma.incident.findMany({
-      distinct: ['district'],
-      select: { district: true }
+      select: { district: true },
+      distinct: ['district']
     });
     res.json(districts.map(d => d.district));
   } catch (error) {
@@ -43,6 +43,8 @@ app.get('/incidents', async (req, res) => {
       district: district || undefined,
     };
 
+    
+
     // Date filtering with range
     if (date) {
       const startDate = new Date(date);
@@ -54,7 +56,7 @@ app.get('/incidents', async (req, res) => {
         lt: endDate
       };
     }
-
+    
     const incidents = await prisma.incident.findMany({
       where,
       include: {
@@ -70,14 +72,61 @@ app.get('/incidents', async (req, res) => {
   }
 });
 
+app.get('/incidents/:id', async (req, res) => {
+  try {
+    const incident = await prisma.incident.findUnique({
+      where: { id: Number(req.params.id) },
+      include: {
+        comments: true,
+        emergencyResponses: true
+      }
+    });
+    res.json(incident);
+  } catch (error) {
+    res.status(500).json({ error: 'Error fetching incident' });
+  }
+});
+
 
 // Create new incident
 app.post('/incidents', async (req, res) => {
-  const { type, district, location, description, status } = req.body;
-  const newIncident = await prisma.incident.create({
-    data: { type, district, location, description, status },
-  });
-  res.json(newIncident);
+  const { 
+    type, 
+    district, 
+    location, 
+    description, 
+    name, 
+    contact, 
+    injuredOrDead, 
+    numInjuredOrDead 
+  } = req.body;
+
+  if (!type || !district || !location || !description || !name || !contact) {
+    return res.status(400).json({ error: 'Missing required fields' });
+  }
+
+  if (injuredOrDead && !numInjuredOrDead) {
+    return res.status(400).json({ error: 'Number required for injury/death cases' });
+  }
+
+  try {
+    const newIncident = await prisma.incident.create({
+      data: {
+        type,
+        district,
+        location,
+        description,
+        status: "Active",
+        name,
+        contact,
+        injuredOrDead: injuredOrDead || false,
+        numInjuredOrDead: injuredOrDead ? numInjuredOrDead : null
+      }
+    });
+    res.json(newIncident);
+  } catch (error) {
+    res.status(500).json({ error: 'Error creating incident' });
+  }
 });
 
 // Update affected count
@@ -135,21 +184,23 @@ app.get('/incidents/:id/comments', async (req, res) => {
   
   // Add a comment to an incident
   app.post('/incidents/:id/comments', async (req, res) => {
-    const { id } = req.params;
-    const { content } = req.body;
-  
-    if (!content) return res.status(400).json({ error: 'Comment content is required' });
+    const { content, isAdmin } = req.body;
+    
+    if (!content) {
+      return res.status(400).json({ error: 'Comment content is required' });
+    }
   
     try {
       const comment = await prisma.comment.create({
         data: {
           content,
-          incidentId: Number(id)
+          isAdmin: isAdmin || false,
+          incidentId: Number(req.params.id)
         }
       });
       res.json(comment);
     } catch (error) {
-      res.status(500).json({ error: 'Error adding comment' });
+      res.status(500).json({ error: 'Error creating comment' });
     }
   });
   
@@ -199,31 +250,19 @@ app.get('/incidents/:id/emergency-responses', async (req, res) => {
       res.status(500).json({ error: 'Error adding emergency response' });
     }
   });
-  
-  // Get all incidents with optional filters
-app.get('/incidents', async (req, res) => {
-    const { status, district, date } = req.query;
-  
+
+  app.delete('/emergency-responses/:id', async (req, res) => {
+    const { id } = req.params;
     try {
-      const incidents = await prisma.incident.findMany({
-        where: {
-          status: status || undefined,
-          district: district || undefined,
-          date: date ? new Date(date) : undefined,
-        },
-        include: {
-          comments: true,
-          emergencyResponses: true
-        },
-        orderBy: { date: 'desc' }
+      await prisma.emergencyResponse.delete({
+        where: { id: Number(id) }
       });
-  
-      res.json(incidents);
+      res.json({ message: 'Response deleted' });
     } catch (error) {
-      res.status(500).json({ error: 'Error fetching incidents' });
+      res.status(500).json({ error: 'Error deleting response' });
     }
   });
-  
+
   // Update Incident Status (Active/Inactive)
 app.patch('/incidents/:id/status', async (req, res) => {
     const { id } = req.params;

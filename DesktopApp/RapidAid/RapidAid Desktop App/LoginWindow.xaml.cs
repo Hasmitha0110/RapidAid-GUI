@@ -17,6 +17,10 @@ namespace RapidAid_Desktop_App
     /// <summary>
     /// Interaction logic for LoginWindow.xaml
     /// </summary>
+    /// 
+
+    
+
     public partial class LoginWindow : Window
     {
         public LoginWindow()
@@ -29,27 +33,42 @@ namespace RapidAid_Desktop_App
             this.Close();
         }
 
-        private void Login_Click(object sender, RoutedEventArgs e)
+        private async void Login_Click(object sender, RoutedEventArgs e)
         {
-            string username = txtUsername.Text;
-            string password = txtPassword.Password;
-
-            if (username == "admin" && password == "admin")
+            if (string.IsNullOrEmpty(txtUsername.Text) || string.IsNullOrEmpty(txtPassword.Password))
             {
-                // Open the main dashboard
-                MainDashboard dashboard = new MainDashboard(username);
-                dashboard.Show();
-                this.Close();
+                MessageBox.Show("Username and password are required!");
+                return;
             }
-            else
+            try
             {
-                MessageBox.Show("Invalid username or password!", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                var user = await ApiHelper.PostAsync<User>("/login", new
+                {
+                    username = txtUsername.Text,
+                    password = txtPassword.Password,
+                });
+
+                if (user != null )
+                {
+                    if (user.Role != "admin")
+                    {
+                        MessageBox.Show("Access restricted to admins only.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                        return;
+                    }
+
+                    new MainDashboard(user.Name).Show();
+                    this.Close();
+                }
+                else
+                {
+                    MessageBox.Show("Invalid username or password!");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Login failed: {ex.Message}");
             }
         }
-    
-
-
-
         private void SignUp_Click(object sender, RoutedEventArgs e)
         {
             SignUpWindow signUpWindow = new SignUpWindow();

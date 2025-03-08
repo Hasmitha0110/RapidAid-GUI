@@ -3,8 +3,44 @@
   "WorkspaceRootPath": "D:\\Hasmitha\\lecture notes\\programing\\Chatgpt\\Gui project\\RapidAid-App\\DesktopApp\\RapidAid\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DBB19B85-7A48-49AE-B9E7-F60912C4780F}|RapidAid Desktop App\\RapidAid Desktop App.csproj|d:\\hasmitha\\lecture notes\\programing\\chatgpt\\gui project\\rapidaid-app\\desktopapp\\rapidaid\\rapidaid desktop app\\maindashboard.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{DBB19B85-7A48-49AE-B9E7-F60912C4780F}|RapidAid Desktop App\\RapidAid Desktop App.csproj|solutionrelative:rapidaid desktop app\\maindashboard.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{DBB19B85-7A48-49AE-B9E7-F60912C4780F}|RapidAid Desktop App\\RapidAid Desktop App.csproj|d:\\hasmitha\\lecture notes\\programing\\chatgpt\\gui project\\rapidaid-app\\desktopapp\\rapidaid\\rapidaid desktop app\\pastincidentspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DBB19B85-7A48-49AE-B9E7-F60912C4780F}|RapidAid Desktop App\\RapidAid Desktop App.csproj|solutionrelative:rapidaid desktop app\\pastincidentspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DBB19B85-7A48-49AE-B9E7-F60912C4780F}|RapidAid Desktop App\\RapidAid Desktop App.csproj|d:\\hasmitha\\lecture notes\\programing\\chatgpt\\gui project\\rapidaid-app\\desktopapp\\rapidaid\\rapidaid desktop app\\pastincidentspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{DBB19B85-7A48-49AE-B9E7-F60912C4780F}|RapidAid Desktop App\\RapidAid Desktop App.csproj|solutionrelative:rapidaid desktop app\\pastincidentspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DBB19B85-7A48-49AE-B9E7-F60912C4780F}|RapidAid Desktop App\\RapidAid Desktop App.csproj|d:\\hasmitha\\lecture notes\\programing\\chatgpt\\gui project\\rapidaid-app\\desktopapp\\rapidaid\\rapidaid desktop app\\incidents.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DBB19B85-7A48-49AE-B9E7-F60912C4780F}|RapidAid Desktop App\\RapidAid Desktop App.csproj|solutionrelative:rapidaid desktop app\\incidents.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DBB19B85-7A48-49AE-B9E7-F60912C4780F}|RapidAid Desktop App\\RapidAid Desktop App.csproj|d:\\hasmitha\\lecture notes\\programing\\chatgpt\\gui project\\rapidaid-app\\desktopapp\\rapidaid\\rapidaid desktop app\\incidentdetailspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DBB19B85-7A48-49AE-B9E7-F60912C4780F}|RapidAid Desktop App\\RapidAid Desktop App.csproj|solutionrelative:rapidaid desktop app\\incidentdetailspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DBB19B85-7A48-49AE-B9E7-F60912C4780F}|RapidAid Desktop App\\RapidAid Desktop App.csproj|d:\\hasmitha\\lecture notes\\programing\\chatgpt\\gui project\\rapidaid-app\\desktopapp\\rapidaid\\rapidaid desktop app\\incidentdetailspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{DBB19B85-7A48-49AE-B9E7-F60912C4780F}|RapidAid Desktop App\\RapidAid Desktop App.csproj|solutionrelative:rapidaid desktop app\\incidentdetailspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DBB19B85-7A48-49AE-B9E7-F60912C4780F}|RapidAid Desktop App\\RapidAid Desktop App.csproj|d:\\hasmitha\\lecture notes\\programing\\chatgpt\\gui project\\rapidaid-app\\desktopapp\\rapidaid\\rapidaid desktop app\\activeincidentspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DBB19B85-7A48-49AE-B9E7-F60912C4780F}|RapidAid Desktop App\\RapidAid Desktop App.csproj|solutionrelative:rapidaid desktop app\\activeincidentspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DBB19B85-7A48-49AE-B9E7-F60912C4780F}|RapidAid Desktop App\\RapidAid Desktop App.csproj|d:\\hasmitha\\lecture notes\\programing\\chatgpt\\gui project\\rapidaid-app\\desktopapp\\rapidaid\\rapidaid desktop app\\activeincidentspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{DBB19B85-7A48-49AE-B9E7-F60912C4780F}|RapidAid Desktop App\\RapidAid Desktop App.csproj|solutionrelative:rapidaid desktop app\\activeincidentspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DBB19B85-7A48-49AE-B9E7-F60912C4780F}|RapidAid Desktop App\\RapidAid Desktop App.csproj|d:\\hasmitha\\lecture notes\\programing\\chatgpt\\gui project\\rapidaid-app\\desktopapp\\rapidaid\\rapidaid desktop app\\loginwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DBB19B85-7A48-49AE-B9E7-F60912C4780F}|RapidAid Desktop App\\RapidAid Desktop App.csproj|solutionrelative:rapidaid desktop app\\loginwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DBB19B85-7A48-49AE-B9E7-F60912C4780F}|RapidAid Desktop App\\RapidAid Desktop App.csproj|d:\\hasmitha\\lecture notes\\programing\\chatgpt\\gui project\\rapidaid-app\\desktopapp\\rapidaid\\rapidaid desktop app\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DBB19B85-7A48-49AE-B9E7-F60912C4780F}|RapidAid Desktop App\\RapidAid Desktop App.csproj|solutionrelative:rapidaid desktop app\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DBB19B85-7A48-49AE-B9E7-F60912C4780F}|RapidAid Desktop App\\RapidAid Desktop App.csproj|d:\\hasmitha\\lecture notes\\programing\\chatgpt\\gui project\\rapidaid-app\\desktopapp\\rapidaid\\rapidaid desktop app\\signupwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DBB19B85-7A48-49AE-B9E7-F60912C4780F}|RapidAid Desktop App\\RapidAid Desktop App.csproj|solutionrelative:rapidaid desktop app\\signupwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DBB19B85-7A48-49AE-B9E7-F60912C4780F}|RapidAid Desktop App\\RapidAid Desktop App.csproj|d:\\hasmitha\\lecture notes\\programing\\chatgpt\\gui project\\rapidaid-app\\desktopapp\\rapidaid\\rapidaid desktop app\\loginwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -13,6 +49,53 @@
     {
       "AbsoluteMoniker": "D:0:0:{DBB19B85-7A48-49AE-B9E7-F60912C4780F}|RapidAid Desktop App\\RapidAid Desktop App.csproj|d:\\hasmitha\\lecture notes\\programing\\chatgpt\\gui project\\rapidaid-app\\desktopapp\\rapidaid\\rapidaid desktop app\\signupwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{DBB19B85-7A48-49AE-B9E7-F60912C4780F}|RapidAid Desktop App\\RapidAid Desktop App.csproj|solutionrelative:rapidaid desktop app\\signupwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DBB19B85-7A48-49AE-B9E7-F60912C4780F}|RapidAid Desktop App\\RapidAid Desktop App.csproj|d:\\hasmitha\\lecture notes\\programing\\chatgpt\\gui project\\rapidaid-app\\desktopapp\\rapidaid\\rapidaid desktop app\\converters\\booleantotextconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DBB19B85-7A48-49AE-B9E7-F60912C4780F}|RapidAid Desktop App\\RapidAid Desktop App.csproj|solutionrelative:rapidaid desktop app\\converters\\booleantotextconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DBB19B85-7A48-49AE-B9E7-F60912C4780F}|RapidAid Desktop App\\RapidAid Desktop App.csproj|d:\\hasmitha\\lecture notes\\programing\\chatgpt\\gui project\\rapidaid-app\\desktopapp\\rapidaid\\rapidaid desktop app\\apihelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DBB19B85-7A48-49AE-B9E7-F60912C4780F}|RapidAid Desktop App\\RapidAid Desktop App.csproj|solutionrelative:rapidaid desktop app\\apihelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DBB19B85-7A48-49AE-B9E7-F60912C4780F}|RapidAid Desktop App\\RapidAid Desktop App.csproj|d:\\hasmitha\\lecture notes\\programing\\chatgpt\\gui project\\rapidaid-app\\desktopapp\\rapidaid\\rapidaid desktop app\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{DBB19B85-7A48-49AE-B9E7-F60912C4780F}|RapidAid Desktop App\\RapidAid Desktop App.csproj|solutionrelative:rapidaid desktop app\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DBB19B85-7A48-49AE-B9E7-F60912C4780F}|RapidAid Desktop App\\RapidAid Desktop App.csproj|d:\\hasmitha\\lecture notes\\programing\\chatgpt\\gui project\\rapidaid-app\\desktopapp\\rapidaid\\rapidaid desktop app\\converters\\booltovisibilityconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DBB19B85-7A48-49AE-B9E7-F60912C4780F}|RapidAid Desktop App\\RapidAid Desktop App.csproj|solutionrelative:rapidaid desktop app\\converters\\booltovisibilityconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\gdhas\\AppData\\Local\\Temp\\.vsdbgsrc\\0a84cc53936b314ba955b54f50bf4796d8234943f3fd7b93873381b45d404026\\XamlReader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DBB19B85-7A48-49AE-B9E7-F60912C4780F}|RapidAid Desktop App\\RapidAid Desktop App.csproj|d:\\hasmitha\\lecture notes\\programing\\chatgpt\\gui project\\rapidaid-app\\desktopapp\\rapidaid\\rapidaid desktop app\\maindashboard.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DBB19B85-7A48-49AE-B9E7-F60912C4780F}|RapidAid Desktop App\\RapidAid Desktop App.csproj|solutionrelative:rapidaid desktop app\\maindashboard.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DBB19B85-7A48-49AE-B9E7-F60912C4780F}|RapidAid Desktop App\\RapidAid Desktop App.csproj|d:\\hasmitha\\lecture notes\\programing\\chatgpt\\gui project\\rapidaid-app\\desktopapp\\rapidaid\\rapidaid desktop app\\maindashboard.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{DBB19B85-7A48-49AE-B9E7-F60912C4780F}|RapidAid Desktop App\\RapidAid Desktop App.csproj|solutionrelative:rapidaid desktop app\\maindashboard.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DBB19B85-7A48-49AE-B9E7-F60912C4780F}|RapidAid Desktop App\\RapidAid Desktop App.csproj|d:\\hasmitha\\lecture notes\\programing\\chatgpt\\gui project\\rapidaid-app\\desktopapp\\rapidaid\\rapidaid desktop app\\emergencyresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DBB19B85-7A48-49AE-B9E7-F60912C4780F}|RapidAid Desktop App\\RapidAid Desktop App.csproj|solutionrelative:rapidaid desktop app\\emergencyresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DBB19B85-7A48-49AE-B9E7-F60912C4780F}|RapidAid Desktop App\\RapidAid Desktop App.csproj|d:\\hasmitha\\lecture notes\\programing\\chatgpt\\gui project\\rapidaid-app\\desktopapp\\rapidaid\\rapidaid desktop app\\comment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DBB19B85-7A48-49AE-B9E7-F60912C4780F}|RapidAid Desktop App\\RapidAid Desktop App.csproj|solutionrelative:rapidaid desktop app\\comment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DBB19B85-7A48-49AE-B9E7-F60912C4780F}|RapidAid Desktop App\\RapidAid Desktop App.csproj|d:\\hasmitha\\lecture notes\\programing\\chatgpt\\gui project\\rapidaid-app\\desktopapp\\rapidaid\\rapidaid desktop app\\converters\\statuscolorconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DBB19B85-7A48-49AE-B9E7-F60912C4780F}|RapidAid Desktop App\\RapidAid Desktop App.csproj|solutionrelative:rapidaid desktop app\\converters\\statuscolorconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DBB19B85-7A48-49AE-B9E7-F60912C4780F}|RapidAid Desktop App\\RapidAid Desktop App.csproj|d:\\hasmitha\\lecture notes\\programing\\chatgpt\\gui project\\rapidaid-app\\desktopapp\\rapidaid\\rapidaid desktop app\\converters\\admincommentconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DBB19B85-7A48-49AE-B9E7-F60912C4780F}|RapidAid Desktop App\\RapidAid Desktop App.csproj|solutionrelative:rapidaid desktop app\\converters\\admincommentconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DBB19B85-7A48-49AE-B9E7-F60912C4780F}|RapidAid Desktop App\\RapidAid Desktop App.csproj|d:\\hasmitha\\lecture notes\\programing\\chatgpt\\gui project\\rapidaid-app\\desktopapp\\rapidaid\\rapidaid desktop app\\rapidaid desktop app.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{DBB19B85-7A48-49AE-B9E7-F60912C4780F}|RapidAid Desktop App\\RapidAid Desktop App.csproj|solutionrelative:rapidaid desktop app\\rapidaid desktop app.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,11 +105,168 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PastIncidentsPage.xaml.cs",
+              "DocumentMoniker": "D:\\Hasmitha\\lecture notes\\programing\\Chatgpt\\Gui project\\RapidAid-App\\DesktopApp\\RapidAid\\RapidAid Desktop App\\PastIncidentsPage.xaml.cs",
+              "RelativeDocumentMoniker": "RapidAid Desktop App\\PastIncidentsPage.xaml.cs",
+              "ToolTip": "D:\\Hasmitha\\lecture notes\\programing\\Chatgpt\\Gui project\\RapidAid-App\\DesktopApp\\RapidAid\\RapidAid Desktop App\\PastIncidentsPage.xaml.cs",
+              "RelativeToolTip": "RapidAid Desktop App\\PastIncidentsPage.xaml.cs",
+              "ViewState": "AgIAAD0AAAAAAAAAAAAkwE8AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-08T16:47:40.586Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "PastIncidentsPage.xaml",
+              "DocumentMoniker": "D:\\Hasmitha\\lecture notes\\programing\\Chatgpt\\Gui project\\RapidAid-App\\DesktopApp\\RapidAid\\RapidAid Desktop App\\PastIncidentsPage.xaml",
+              "RelativeDocumentMoniker": "RapidAid Desktop App\\PastIncidentsPage.xaml",
+              "ToolTip": "D:\\Hasmitha\\lecture notes\\programing\\Chatgpt\\Gui project\\RapidAid-App\\DesktopApp\\RapidAid\\RapidAid Desktop App\\PastIncidentsPage.xaml",
+              "RelativeToolTip": "RapidAid Desktop App\\PastIncidentsPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-03-08T08:04:49.04Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ActiveIncidentsPage.xaml",
+              "DocumentMoniker": "D:\\Hasmitha\\lecture notes\\programing\\Chatgpt\\Gui project\\RapidAid-App\\DesktopApp\\RapidAid\\RapidAid Desktop App\\ActiveIncidentsPage.xaml",
+              "RelativeDocumentMoniker": "RapidAid Desktop App\\ActiveIncidentsPage.xaml",
+              "ToolTip": "D:\\Hasmitha\\lecture notes\\programing\\Chatgpt\\Gui project\\RapidAid-App\\DesktopApp\\RapidAid\\RapidAid Desktop App\\ActiveIncidentsPage.xaml",
+              "RelativeToolTip": "RapidAid Desktop App\\ActiveIncidentsPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-03-05T12:03:36.928Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IncidentDetailsPage.xaml",
+              "DocumentMoniker": "D:\\Hasmitha\\lecture notes\\programing\\Chatgpt\\Gui project\\RapidAid-App\\DesktopApp\\RapidAid\\RapidAid Desktop App\\IncidentDetailsPage.xaml",
+              "RelativeDocumentMoniker": "RapidAid Desktop App\\IncidentDetailsPage.xaml",
+              "ToolTip": "D:\\Hasmitha\\lecture notes\\programing\\Chatgpt\\Gui project\\RapidAid-App\\DesktopApp\\RapidAid\\RapidAid Desktop App\\IncidentDetailsPage.xaml",
+              "RelativeToolTip": "RapidAid Desktop App\\IncidentDetailsPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-03-06T16:53:42.385Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Incidents.cs",
+              "DocumentMoniker": "D:\\Hasmitha\\lecture notes\\programing\\Chatgpt\\Gui project\\RapidAid-App\\DesktopApp\\RapidAid\\RapidAid Desktop App\\Incidents.cs",
+              "RelativeDocumentMoniker": "RapidAid Desktop App\\Incidents.cs",
+              "ToolTip": "D:\\Hasmitha\\lecture notes\\programing\\Chatgpt\\Gui project\\RapidAid-App\\DesktopApp\\RapidAid\\RapidAid Desktop App\\Incidents.cs",
+              "RelativeToolTip": "RapidAid Desktop App\\Incidents.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-05T11:34:31.76Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ActiveIncidentsPage.xaml.cs",
+              "DocumentMoniker": "D:\\Hasmitha\\lecture notes\\programing\\Chatgpt\\Gui project\\RapidAid-App\\DesktopApp\\RapidAid\\RapidAid Desktop App\\ActiveIncidentsPage.xaml.cs",
+              "RelativeDocumentMoniker": "RapidAid Desktop App\\ActiveIncidentsPage.xaml.cs",
+              "ToolTip": "D:\\Hasmitha\\lecture notes\\programing\\Chatgpt\\Gui project\\RapidAid-App\\DesktopApp\\RapidAid\\RapidAid Desktop App\\ActiveIncidentsPage.xaml.cs",
+              "RelativeToolTip": "RapidAid Desktop App\\ActiveIncidentsPage.xaml.cs",
+              "ViewState": "AgIAAEsAAAAAAAAAAAAmwGEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-05T11:47:29.208Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "User.cs",
+              "DocumentMoniker": "D:\\Hasmitha\\lecture notes\\programing\\Chatgpt\\Gui project\\RapidAid-App\\DesktopApp\\RapidAid\\RapidAid Desktop App\\User.cs",
+              "RelativeDocumentMoniker": "RapidAid Desktop App\\User.cs",
+              "ToolTip": "D:\\Hasmitha\\lecture notes\\programing\\Chatgpt\\Gui project\\RapidAid-App\\DesktopApp\\RapidAid\\RapidAid Desktop App\\User.cs",
+              "RelativeToolTip": "RapidAid Desktop App\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-07T17:02:51.299Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IncidentDetailsPage.xaml.cs",
+              "DocumentMoniker": "D:\\Hasmitha\\lecture notes\\programing\\Chatgpt\\Gui project\\RapidAid-App\\DesktopApp\\RapidAid\\RapidAid Desktop App\\IncidentDetailsPage.xaml.cs",
+              "RelativeDocumentMoniker": "RapidAid Desktop App\\IncidentDetailsPage.xaml.cs",
+              "ToolTip": "D:\\Hasmitha\\lecture notes\\programing\\Chatgpt\\Gui project\\RapidAid-App\\DesktopApp\\RapidAid\\RapidAid Desktop App\\IncidentDetailsPage.xaml.cs",
+              "RelativeToolTip": "RapidAid Desktop App\\IncidentDetailsPage.xaml.cs",
+              "ViewState": "AgIAAFMAAAAAAAAAAAAkwGIAAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-08T11:28:22.094Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "LoginWindow.xaml.cs",
+              "DocumentMoniker": "D:\\Hasmitha\\lecture notes\\programing\\Chatgpt\\Gui project\\RapidAid-App\\DesktopApp\\RapidAid\\RapidAid Desktop App\\LoginWindow.xaml.cs",
+              "RelativeDocumentMoniker": "RapidAid Desktop App\\LoginWindow.xaml.cs",
+              "ToolTip": "D:\\Hasmitha\\lecture notes\\programing\\Chatgpt\\Gui project\\RapidAid-App\\DesktopApp\\RapidAid\\RapidAid Desktop App\\LoginWindow.xaml.cs",
+              "RelativeToolTip": "RapidAid Desktop App\\LoginWindow.xaml.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAAmwDgAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-05T04:39:57.558Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ApiHelper.cs",
+              "DocumentMoniker": "D:\\Hasmitha\\lecture notes\\programing\\Chatgpt\\Gui project\\RapidAid-App\\DesktopApp\\RapidAid\\RapidAid Desktop App\\ApiHelper.cs",
+              "RelativeDocumentMoniker": "RapidAid Desktop App\\ApiHelper.cs",
+              "ToolTip": "D:\\Hasmitha\\lecture notes\\programing\\Chatgpt\\Gui project\\RapidAid-App\\DesktopApp\\RapidAid\\RapidAid Desktop App\\ApiHelper.cs",
+              "RelativeToolTip": "RapidAid Desktop App\\ApiHelper.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAowCMAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-08T12:15:35.597Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "SignUpWindow.xaml.cs",
+              "DocumentMoniker": "D:\\Hasmitha\\lecture notes\\programing\\Chatgpt\\Gui project\\RapidAid-App\\DesktopApp\\RapidAid\\RapidAid Desktop App\\SignUpWindow.xaml.cs",
+              "RelativeDocumentMoniker": "RapidAid Desktop App\\SignUpWindow.xaml.cs",
+              "ToolTip": "D:\\Hasmitha\\lecture notes\\programing\\Chatgpt\\Gui project\\RapidAid-App\\DesktopApp\\RapidAid\\RapidAid Desktop App\\SignUpWindow.xaml.cs",
+              "RelativeToolTip": "RapidAid Desktop App\\SignUpWindow.xaml.cs",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAawDEAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-08T15:58:13.797Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "BooleanToTextConverter.cs",
+              "DocumentMoniker": "D:\\Hasmitha\\lecture notes\\programing\\Chatgpt\\Gui project\\RapidAid-App\\DesktopApp\\RapidAid\\RapidAid Desktop App\\Converters\\BooleanToTextConverter.cs",
+              "RelativeDocumentMoniker": "RapidAid Desktop App\\Converters\\BooleanToTextConverter.cs",
+              "ToolTip": "D:\\Hasmitha\\lecture notes\\programing\\Chatgpt\\Gui project\\RapidAid-App\\DesktopApp\\RapidAid\\RapidAid Desktop App\\Converters\\BooleanToTextConverter.cs",
+              "RelativeToolTip": "RapidAid Desktop App\\Converters\\BooleanToTextConverter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-08T14:47:09.47Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "LoginWindow.xaml",
               "DocumentMoniker": "D:\\Hasmitha\\lecture notes\\programing\\Chatgpt\\Gui project\\RapidAid-App\\DesktopApp\\RapidAid\\RapidAid Desktop App\\LoginWindow.xaml",
               "RelativeDocumentMoniker": "RapidAid Desktop App\\LoginWindow.xaml",
@@ -38,19 +278,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 11,
               "Title": "SignUpWindow.xaml",
               "DocumentMoniker": "D:\\Hasmitha\\lecture notes\\programing\\Chatgpt\\Gui project\\RapidAid-App\\DesktopApp\\RapidAid\\RapidAid Desktop App\\SignUpWindow.xaml",
               "RelativeDocumentMoniker": "RapidAid Desktop App\\SignUpWindow.xaml",
               "ToolTip": "D:\\Hasmitha\\lecture notes\\programing\\Chatgpt\\Gui project\\RapidAid-App\\DesktopApp\\RapidAid\\RapidAid Desktop App\\SignUpWindow.xaml",
               "RelativeToolTip": "RapidAid Desktop App\\SignUpWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-03-03T22:31:36.356Z",
+              "WhenOpened": "2025-03-08T15:56:19.739Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 18,
               "Title": "MainDashboard.xaml",
               "DocumentMoniker": "D:\\Hasmitha\\lecture notes\\programing\\Chatgpt\\Gui project\\RapidAid-App\\DesktopApp\\RapidAid\\RapidAid Desktop App\\MainDashboard.xaml",
               "RelativeDocumentMoniker": "RapidAid Desktop App\\MainDashboard.xaml",
@@ -58,6 +298,120 @@
               "RelativeToolTip": "RapidAid Desktop App\\MainDashboard.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-03-03T20:40:40.423Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "App.xaml",
+              "DocumentMoniker": "D:\\Hasmitha\\lecture notes\\programing\\Chatgpt\\Gui project\\RapidAid-App\\DesktopApp\\RapidAid\\RapidAid Desktop App\\App.xaml",
+              "RelativeDocumentMoniker": "RapidAid Desktop App\\App.xaml",
+              "ToolTip": "D:\\Hasmitha\\lecture notes\\programing\\Chatgpt\\Gui project\\RapidAid-App\\DesktopApp\\RapidAid\\RapidAid Desktop App\\App.xaml",
+              "RelativeToolTip": "RapidAid Desktop App\\App.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-03-07T15:34:48.783Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "BoolToVisibilityConverter.cs",
+              "DocumentMoniker": "D:\\Hasmitha\\lecture notes\\programing\\Chatgpt\\Gui project\\RapidAid-App\\DesktopApp\\RapidAid\\RapidAid Desktop App\\Converters\\BoolToVisibilityConverter.cs",
+              "RelativeDocumentMoniker": "RapidAid Desktop App\\Converters\\BoolToVisibilityConverter.cs",
+              "ToolTip": "D:\\Hasmitha\\lecture notes\\programing\\Chatgpt\\Gui project\\RapidAid-App\\DesktopApp\\RapidAid\\RapidAid Desktop App\\Converters\\BoolToVisibilityConverter.cs",
+              "RelativeToolTip": "RapidAid Desktop App\\Converters\\BoolToVisibilityConverter.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAYwAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-07T16:32:45.656Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "XamlReader.cs",
+              "DocumentMoniker": "C:\\Users\\gdhas\\AppData\\Local\\Temp\\.vsdbgsrc\\0a84cc53936b314ba955b54f50bf4796d8234943f3fd7b93873381b45d404026\\XamlReader.cs",
+              "ToolTip": "C:\\Users\\gdhas\\AppData\\Local\\Temp\\.vsdbgsrc\\0a84cc53936b314ba955b54f50bf4796d8234943f3fd7b93873381b45d404026\\XamlReader.cs [Read Only]",
+              "ViewState": "AgIAAK8BAAAAAAAAAAAQwLUBAAACAAAAAQAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-08T13:07:24.584Z",
+              "EditorCaption": " [Read Only]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "MainDashboard.xaml.cs",
+              "DocumentMoniker": "D:\\Hasmitha\\lecture notes\\programing\\Chatgpt\\Gui project\\RapidAid-App\\DesktopApp\\RapidAid\\RapidAid Desktop App\\MainDashboard.xaml.cs",
+              "RelativeDocumentMoniker": "RapidAid Desktop App\\MainDashboard.xaml.cs",
+              "ToolTip": "D:\\Hasmitha\\lecture notes\\programing\\Chatgpt\\Gui project\\RapidAid-App\\DesktopApp\\RapidAid\\RapidAid Desktop App\\MainDashboard.xaml.cs",
+              "RelativeToolTip": "RapidAid Desktop App\\MainDashboard.xaml.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAAiwBkAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-05T09:47:35.217Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "EmergencyResponse.cs",
+              "DocumentMoniker": "D:\\Hasmitha\\lecture notes\\programing\\Chatgpt\\Gui project\\RapidAid-App\\DesktopApp\\RapidAid\\RapidAid Desktop App\\EmergencyResponse.cs",
+              "RelativeDocumentMoniker": "RapidAid Desktop App\\EmergencyResponse.cs",
+              "ToolTip": "D:\\Hasmitha\\lecture notes\\programing\\Chatgpt\\Gui project\\RapidAid-App\\DesktopApp\\RapidAid\\RapidAid Desktop App\\EmergencyResponse.cs",
+              "RelativeToolTip": "RapidAid Desktop App\\EmergencyResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-05T11:36:58.341Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Comment.cs",
+              "DocumentMoniker": "D:\\Hasmitha\\lecture notes\\programing\\Chatgpt\\Gui project\\RapidAid-App\\DesktopApp\\RapidAid\\RapidAid Desktop App\\Comment.cs",
+              "RelativeDocumentMoniker": "RapidAid Desktop App\\Comment.cs",
+              "ToolTip": "D:\\Hasmitha\\lecture notes\\programing\\Chatgpt\\Gui project\\RapidAid-App\\DesktopApp\\RapidAid\\RapidAid Desktop App\\Comment.cs",
+              "RelativeToolTip": "RapidAid Desktop App\\Comment.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-05T11:35:56.956Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "StatusColorConverter.cs",
+              "DocumentMoniker": "D:\\Hasmitha\\lecture notes\\programing\\Chatgpt\\Gui project\\RapidAid-App\\DesktopApp\\RapidAid\\RapidAid Desktop App\\Converters\\StatusColorConverter.cs",
+              "RelativeDocumentMoniker": "RapidAid Desktop App\\Converters\\StatusColorConverter.cs",
+              "ToolTip": "D:\\Hasmitha\\lecture notes\\programing\\Chatgpt\\Gui project\\RapidAid-App\\DesktopApp\\RapidAid\\RapidAid Desktop App\\Converters\\StatusColorConverter.cs",
+              "RelativeToolTip": "RapidAid Desktop App\\Converters\\StatusColorConverter.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAcwBYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-07T16:27:12.91Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "AdminCommentConverter.cs",
+              "DocumentMoniker": "D:\\Hasmitha\\lecture notes\\programing\\Chatgpt\\Gui project\\RapidAid-App\\DesktopApp\\RapidAid\\RapidAid Desktop App\\Converters\\AdminCommentConverter.cs",
+              "RelativeDocumentMoniker": "RapidAid Desktop App\\Converters\\AdminCommentConverter.cs",
+              "ToolTip": "D:\\Hasmitha\\lecture notes\\programing\\Chatgpt\\Gui project\\RapidAid-App\\DesktopApp\\RapidAid\\RapidAid Desktop App\\Converters\\AdminCommentConverter.cs",
+              "RelativeToolTip": "RapidAid Desktop App\\Converters\\AdminCommentConverter.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAcwBgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-07T16:30:34.67Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "RapidAid Desktop App.csproj",
+              "DocumentMoniker": "D:\\Hasmitha\\lecture notes\\programing\\Chatgpt\\Gui project\\RapidAid-App\\DesktopApp\\RapidAid\\RapidAid Desktop App\\RapidAid Desktop App.csproj",
+              "RelativeDocumentMoniker": "RapidAid Desktop App\\RapidAid Desktop App.csproj",
+              "ToolTip": "D:\\Hasmitha\\lecture notes\\programing\\Chatgpt\\Gui project\\RapidAid-App\\DesktopApp\\RapidAid\\RapidAid Desktop App\\RapidAid Desktop App.csproj",
+              "RelativeToolTip": "RapidAid Desktop App\\RapidAid Desktop App.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-03-07T16:24:23.191Z",
               "EditorCaption": ""
             }
           ]
